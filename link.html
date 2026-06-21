@@ -22,14 +22,180 @@ function FP_getObjectByID(id,o) {//v1.0
 }
 // -->
 </script>
-<body bgcolor="#EEFFBB" onload="FP_preloadImgs(/*url*/'button28.jpg',/*url*/'button29.jpg')">
+<script type="text/javascript">
+<!--
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<body bgcolor="#EEFFBB" onload="FP_preloadImgs(/*url*/'button5.jpg',/*url*/'button6.jpg',/*url*/'button7.jpg',/*url*/'button8.jpg',/*url*/'button9.jpg',/*url*/'button10.jpg',/*url*/'buttonA.jpg',/*url*/'buttonB.jpg',/*url*/'button13.jpg',/*url*/'button17.jpg',/*url*/'button25.jpg',/*url*/'button26.jpg')">
 
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- #BeginEditable "doctitle" -->
-    <title>About</title>
-    <!-- #EndEditable -->
+    <title>FurryPoster69.com</title>
     <style type="text/css">
         body {
             margin: 0pt;
@@ -128,40 +294,42 @@ function FP_getObjectByID(id,o) {//v1.0
     a {
 	color: #008000;
 }
-.auto-style1 {
-	font-size: large;
-}
 a:visited {
 	color: #00FF00;
 }
     </style>
     </style>
 </head>
-<body onload="FP_preloadImgs(/*url*/'button28.jpg',/*url*/'button29.jpg')">
+<body onload="FP_preloadImgs(/*url*/'button5.jpg',/*url*/'button6.jpg',/*url*/'button7.jpg',/*url*/'button8.jpg',/*url*/'button9.jpg',/*url*/'button10.jpg',/*url*/'buttonA.jpg',/*url*/'buttonB.jpg',/*url*/'button13.jpg',/*url*/'button17.jpg',/*url*/'button25.jpg',/*url*/'button26.jpg')">
 
     <div class="banner" style="width: auto; height: auto">
         <span class="banner-text">FURRYPOSTER69.COM</span>
-</div>
+<a href="Photos.html">
+		<img id="img2" alt="Photos" fp-style="fp-btn: Corporate 2" fp-title="Photos" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'button8.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'button3.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'button7.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'button7.jpg')" src="button3.jpg" style="border: 0" width="100"></a>&nbsp;
+		<a href="About.html">
+		<img id="img3" alt="About" fp-style="fp-btn: Corporate 2" fp-title="About" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'button10.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'button11.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'button9.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'button9.jpg')" src="button11.jpg" style="border: 0" width="100"></a>&nbsp;
+		<a href="Other.html">
+		<img id="img4" alt="Other stuff" fp-style="fp-btn: Corporate 2" fp-title="Other stuff" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'buttonB.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'button12.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'buttonA.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'buttonA.jpg')" src="button12.jpg" style="border: 0" width="100"></a>
+		<a href="http://users3.smartgb.com/g/g.php?a=s&amp;i=g36-41213-7b">
+		<img id="img5" alt="Guest book" fp-style="fp-btn: Corporate 2" fp-title="Guest book" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'button17.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'button18.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'button13.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'button13.jpg')" src="button18.jpg" style="border: 0" width="100"></a>
+		<a href="link.html">
+		<img id="img6" alt="Links and stuff" fp-style="fp-btn: Corporate 2" fp-title="Links and stuff" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'button26.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'button27.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'button25.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'button25.jpg')" src="button27.jpg" style="border: 0" width="100"></a></div>
     </div>
 
 	<!DOCTYPE html>
 <html>
 </head>
-<body onload="FP_preloadImgs(/*url*/'button28.jpg',/*url*/'button29.jpg')">
+<body onload="FP_preloadImgs(/*url*/'button5.jpg',/*url*/'button6.jpg',/*url*/'button7.jpg',/*url*/'button8.jpg',/*url*/'button9.jpg',/*url*/'button10.jpg',/*url*/'buttonA.jpg',/*url*/'buttonB.jpg',/*url*/'button13.jpg',/*url*/'button17.jpg',/*url*/'button25.jpg',/*url*/'button26.jpg')">
 
     <div class="error-banner" style="width: auto; height: 100px">
-        <span class="error-text">Link page</span>
+        <span class="error-text">Link Page</span>
     
     <div class="content-box" style="width: auto; height: auto">
-    <span class="box-header">This Is a link page for stuff like tiktok</span><p style="height: 90px">
-		<strong><span class="auto-style1">About me<br></span></strong>Hello I am 
-		furryposter69 you can call me anything I dont care what you call me this 
-		page was made to shere links and some stuff about my self I am 15 years 
-		old this website is run by my self and I am taken not looking and pls 
-		dont be a freak and email me odd stuff and note phone numbers are for 
-		calls I can not receve text<br>
-		<a href="https://www.tiktok.com/@furryposter69">&nbsp;Tiktok - 
-		Furryposter69</a><br>&nbsp;<a href="http://instagram.com/dobr.eeb/"> 
+    <span class="box-header" style="height: 13px">This Is the furryposrter69.com 
+		Link page<br></span>
+		<p>
+    <span class="box-header" style="height: 96px">T<a href="https://www.tiktok.com/@furryposter69">iktok 
+		- Furryposter69</a><br>&nbsp;<a href="http://instagram.com/dobr.eeb/"> 
 		Instagram - dobr.eeb</a><br><a href="https://x.com/furryposter81">&nbsp; 
 		x/twitter- Furryposter81</a><br>
 		<a href="https://open.spotify.com/user/31qecqbfzez5lniqxzsn3tpknelu">&nbsp;Spotify 
@@ -170,10 +338,9 @@ a:visited {
 		<a href="https://www.facebook.com/evis.shaffer.9/">&nbsp;Facebook - to 
 		lazy to out name here</a><br>
 		<a href="mailto:furryposter69@gmail.com?subject=haiiiiiiiiiiiiiiiiiiii">
-		Email 1 - furryposter69@gmail.com</a><br><br>Phone numbers<br>
-		210-773-3866<br>726-264-8915<br><br><br><hr style="height: -11px"><br>
-		<a href="index.htm">
-		<img id="img1" alt="Home" fp-style="fp-btn: Corporate 2" fp-title="Home" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button29.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button30.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button28.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button28.jpg')" src="button30.jpg" style="border: 0" width="100"></a></div>
+		Email 1 - furryposter69@gmail.com</a></span><br>&nbsp;Phone:<br>
+		(726)-264-8915<br>(210)-773-3866<p>
+		<span class="error-text"><a href="index.htm"><img id="img1" alt="Home" fp-style="fp-btn: Border Left 2" fp-title="Home" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button6.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button4.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button5.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button5.jpg')" src="button4.jpg" style="border: 0" width="100"></a></span></div>
 </body>
 </html>
 
