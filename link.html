@@ -118,6 +118,30 @@ function FP_getObjectByID(id,o) {//v1.0
 }
 // -->
 </script>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
 <body bgcolor="#EEFFBB" onload="FP_preloadImgs(/*url*/'button5.jpg',/*url*/'button6.jpg')">
 
 <!DOCTYPE html>
@@ -250,8 +274,8 @@ function FP_getObjectByID(id,o) {//v1.0
 		page was made to shere links and some stuff about my self I am 15 years 
 		old this website is run by my self and I am taken not looking and pls 
 		dont be a freak and email me odd stuff and note phone numbers are for 
-		calls I can not receve texts 
-		<p style="height: 124px">
+		calls I can not receve texts <br>
+		<img alt="its me bro" height="142" src="I%20think%20its%20me.jpg" width="283"><p style="height: 124px">
 		<a href="https://www.tiktok.com/@furryposter69">&nbsp;
 		Tiktok - Furryposter69</a><br>&nbsp;<a href="http://instagram.com/dobr.eeb/"> 
 		Instagram - dobr.eeb</a><br><a href="https://x.com/furryposter81">&nbsp; 
@@ -264,7 +288,6 @@ function FP_getObjectByID(id,o) {//v1.0
 		<a href="mailto:furryposter69@gmail.com?subject=haiiiiiiiiiiiiiiiiiiii">
 		Email 1 - furryposter69@gmail.com</a><p style="height: 57px">
 		Phone numbers<br>210-773-3866<br>726-264-8915<p style="height: 57px">
-		<img alt="Uhhhhhh meow meow ig" height="142" longdesc="ahhhhhhhhhhhhhhhhhhhhh" src="I%20think%20its%20me.jpg" width="283"><p>
 		<span class="error-text"><a href="index.htm"><img id="img1" alt="Home" fp-style="fp-btn: Border Left 2" fp-title="Home" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button6.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button4.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button5.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button5.jpg')" src="button4.jpg" style="border: 0" width="100"></a></span></div>
 </body>
 </html>
