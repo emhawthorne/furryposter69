@@ -1,5 +1,29 @@
 ﻿<script type="text/javascript">
 <!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<script type="text/javascript">
+<!--
 function FP_preloadImgs() {//v1.0
  var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
  for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
@@ -166,7 +190,7 @@ function FP_getObjectByID(id,o) {//v1.0
 }
 // -->
 </script>
-<body bgcolor="#EEFFBB" onload="FP_preloadImgs(/*url*/'button5.jpg',/*url*/'button6.jpg',/*url*/'button7.jpg',/*url*/'button8.jpg',/*url*/'button9.jpg',/*url*/'button10.jpg',/*url*/'buttonA.jpg',/*url*/'buttonB.jpg',/*url*/'button13.jpg',/*url*/'button17.jpg')">
+<body bgcolor="#EEFFBB" onload="FP_preloadImgs(/*url*/'button5.jpg',/*url*/'button6.jpg',/*url*/'button7.jpg',/*url*/'button8.jpg',/*url*/'button9.jpg',/*url*/'button10.jpg',/*url*/'buttonA.jpg',/*url*/'buttonB.jpg',/*url*/'button13.jpg',/*url*/'button17.jpg',/*url*/'button25.jpg',/*url*/'button26.jpg')">
 
 <!DOCTYPE html>
 <html>
@@ -270,7 +294,7 @@ function FP_getObjectByID(id,o) {//v1.0
     </style>
     </style>
 </head>
-<body onload="FP_preloadImgs(/*url*/'button5.jpg',/*url*/'button6.jpg',/*url*/'button7.jpg',/*url*/'button8.jpg',/*url*/'button9.jpg',/*url*/'button10.jpg',/*url*/'buttonA.jpg',/*url*/'buttonB.jpg',/*url*/'button13.jpg',/*url*/'button17.jpg')">
+<body onload="FP_preloadImgs(/*url*/'button5.jpg',/*url*/'button6.jpg',/*url*/'button7.jpg',/*url*/'button8.jpg',/*url*/'button9.jpg',/*url*/'button10.jpg',/*url*/'buttonA.jpg',/*url*/'buttonB.jpg',/*url*/'button13.jpg',/*url*/'button17.jpg',/*url*/'button25.jpg',/*url*/'button26.jpg')">
 
     <div class="banner" style="width: auto; height: auto">
         <span class="banner-text">FURRYPOSTER69.COM</span>
@@ -281,13 +305,15 @@ function FP_getObjectByID(id,o) {//v1.0
 		<a href="Other.html">
 		<img id="img4" alt="Other stuff" fp-style="fp-btn: Corporate 2" fp-title="Other stuff" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'buttonB.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'button12.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'buttonA.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'buttonA.jpg')" src="button12.jpg" style="border: 0" width="100"></a>
 		<a href="http://users3.smartgb.com/g/g.php?a=s&amp;i=g36-41213-7b">
-		<img id="img5" alt="Guest book" fp-style="fp-btn: Corporate 2" fp-title="Guest book" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'button17.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'button18.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'button13.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'button13.jpg')" src="button18.jpg" style="border: 0" width="100"></a></div>
+		<img id="img5" alt="Guest book" fp-style="fp-btn: Corporate 2" fp-title="Guest book" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'button17.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'button18.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'button13.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'button13.jpg')" src="button18.jpg" style="border: 0" width="100"></a>
+		<a href="link.html">
+		<img id="img6" alt="Links and stuff" fp-style="fp-btn: Corporate 2" fp-title="Links and stuff" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'button26.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'button27.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'button25.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'button25.jpg')" src="button27.jpg" style="border: 0" width="100"></a></div>
     </div>
 
 	<!DOCTYPE html>
 <html>
 </head>
-<body onload="FP_preloadImgs(/*url*/'button5.jpg',/*url*/'button6.jpg',/*url*/'button7.jpg',/*url*/'button8.jpg',/*url*/'button9.jpg',/*url*/'button10.jpg',/*url*/'buttonA.jpg',/*url*/'buttonB.jpg',/*url*/'button13.jpg',/*url*/'button17.jpg')">
+<body onload="FP_preloadImgs(/*url*/'button5.jpg',/*url*/'button6.jpg',/*url*/'button7.jpg',/*url*/'button8.jpg',/*url*/'button9.jpg',/*url*/'button10.jpg',/*url*/'buttonA.jpg',/*url*/'buttonB.jpg',/*url*/'button13.jpg',/*url*/'button17.jpg',/*url*/'button25.jpg',/*url*/'button26.jpg')">
 
     <div class="error-banner" style="width: auto; height: 100px">
         <span class="error-text">FurryPoster69.com Home page</span>
